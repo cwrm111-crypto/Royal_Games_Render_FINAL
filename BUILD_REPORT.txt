@@ -1,0 +1,33 @@
+ROYAL GAMES — FINAL RENDER BUILD REPORT
+Build date: 2026-09-23
+
+SOURCE
+- Original upload: Royal_Games_Ultimate_V6_PRO_270_FILES(2).zip
+- Render-ready package: Royal_Games_Render_FINAL_20260923.zip
+
+VERIFICATION COMPLETED IN THIS ENVIRONMENT
+[PASS] Python syntax parse
+[PASS] Python compile
+[PASS] Game registry = 9/9
+[PASS] Game state smoke = 9/9
+[PASS] Teen Patti 2-player start
+[PASS] Teen Patti timeout finish
+[PASS] Render Blueprint sanity
+[PASS] Secret placeholders only
+[PASS] Existing backend tests: 5 passed
+
+IMPORTANT LIMITATION
+- This environment could not install the pinned third-party dependencies from the internet, so an end-to-end FastAPI/Socket.IO server boot was not executed here.
+- The package's Render deployment uses Render's native Python runtime and the start command defined in render.yaml.
+
+RENDER ARCHITECTURE
+- royal-games-web: FastAPI + Socket.IO
+- royal-games-bot: Telegram background worker
+- Persistent disk mounted at /var/data
+- SQLite path: /var/data/royal_games.sqlite3
+- Public URL supplied by Render; Cloudflare Quick Tunnel is not required after Render deployment
+- Single web instance is configured because room state is held in process memory and the disk-backed configuration is not intended for horizontal scaling
+
+SAFETY
+- Virtual/social coins only.
+- No real-money wagering, crypto wagering, deposits, withdrawals, or cash-out.

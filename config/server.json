@@ -1,0 +1,6 @@
+{
+  "port": 8091,
+  "cors": "*",
+  "max_room_players": 6,
+  "heartbeat_seconds": 10
+}

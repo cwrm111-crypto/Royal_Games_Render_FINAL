@@ -1,0 +1,2 @@
+# Ads
+The default is sponsor/reward slot architecture. `RewardedAdService` has a cooldown and virtual reward boundary. Connect a real provider with server-to-server verification before issuing rewards in production.

@@ -1,0 +1,2 @@
+# Architecture
+FastAPI + python-socketio server, SQLite persistence, shared virtual coin wallet, Telegram bot, static Mini App UI. Games live under `backend/games/` and share a real-time room event bus.

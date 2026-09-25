@@ -1,0 +1,58 @@
+{
+  "games": [
+    {
+      "id": "TEEN_PATTI",
+      "name": "Teen Patti",
+      "players": "2-6",
+      "status": "LIVE"
+    },
+    {
+      "id": "RUMMY",
+      "name": "Rummy",
+      "players": "2-6",
+      "status": "LIVE"
+    },
+    {
+      "id": "CALL_BREAK",
+      "name": "Call Break",
+      "players": "4",
+      "status": "LIVE"
+    },
+    {
+      "id": "HAZARI",
+      "name": "Hazari",
+      "players": "2-4",
+      "status": "LIVE"
+    },
+    {
+      "id": "ANDAR_BAHAR",
+      "name": "Andar Bahar",
+      "players": "1+",
+      "status": "LIVE"
+    },
+    {
+      "id": "BLACKJACK",
+      "name": "Blackjack",
+      "players": "1-6",
+      "status": "LIVE"
+    },
+    {
+      "id": "LUDO",
+      "name": "Ludo",
+      "players": "2-4",
+      "status": "LIVE"
+    },
+    {
+      "id": "SNAKES_LADDERS",
+      "name": "Snakes & Ladders",
+      "players": "2-4",
+      "status": "LIVE"
+    },
+    {
+      "id": "POKER_STYLE",
+      "name": "Poker Style",
+      "players": "2-6",
+      "status": "LIVE"
+    }
+  ]
+}

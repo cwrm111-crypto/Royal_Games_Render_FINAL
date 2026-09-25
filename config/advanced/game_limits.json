@@ -1,0 +1,11 @@
+{
+  "teen_patti": {
+    "max_players": 6
+  },
+  "call_break": {
+    "max_players": 4
+  },
+  "ludo": {
+    "max_players": 4
+  }
+}

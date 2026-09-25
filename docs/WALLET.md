@@ -1,0 +1,2 @@
+# Wallet
+All games use the same `users.coins` balance. Bet/reward operations create transaction rows and `wallet_update` events. The implementation is virtual/social coins only; no cash-out or real-money settlement.

@@ -1,0 +1,32 @@
+{
+  "commands": [
+    {
+      "command": "start",
+      "description": "Open Royal Games"
+    },
+    {
+      "command": "play",
+      "description": "Open live games"
+    },
+    {
+      "command": "games",
+      "description": "Game list"
+    },
+    {
+      "command": "mining",
+      "description": "Virtual rewards"
+    },
+    {
+      "command": "wallet",
+      "description": "Wallet info"
+    },
+    {
+      "command": "status",
+      "description": "Service status"
+    },
+    {
+      "command": "help",
+      "description": "Help"
+    }
+  ]
+}

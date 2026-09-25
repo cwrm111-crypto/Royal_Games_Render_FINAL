@@ -1,0 +1,43 @@
+{
+  "teen_patti": {
+    "max_players": 6,
+    "cards_per_player": 3,
+    "turn_seconds": 15,
+    "min_bet": 10
+  },
+  "rummy": {
+    "max_players": 6,
+    "cards_per_player": 13,
+    "turn_seconds": 30
+  },
+  "call_break": {
+    "players": 4,
+    "cards_per_player": 13,
+    "turn_seconds": 20
+  },
+  "hazari": {
+    "max_players": 4,
+    "cards_per_player": 3,
+    "turn_seconds": 15
+  },
+  "andar_bahar": {
+    "turn_seconds": 20
+  },
+  "blackjack": {
+    "max_players": 6,
+    "turn_seconds": 20
+  },
+  "ludo": {
+    "max_players": 4,
+    "turn_seconds": 20
+  },
+  "snakes_ladders": {
+    "max_players": 4,
+    "turn_seconds": 20
+  },
+  "poker_style": {
+    "max_players": 6,
+    "cards_per_player": 5,
+    "turn_seconds": 20
+  }
+}

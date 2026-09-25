@@ -1,0 +1,1 @@
+Run `python -m pytest` after installing pytest locally if desired. The built-in PowerShell test runs Python compile checks by default.

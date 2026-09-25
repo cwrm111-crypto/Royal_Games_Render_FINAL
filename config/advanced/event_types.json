@@ -1,0 +1,11 @@
+{
+  "events": [
+    "room_join",
+    "room_leave",
+    "game_start",
+    "action",
+    "turn_change",
+    "game_end",
+    "wallet_update"
+  ]
+}

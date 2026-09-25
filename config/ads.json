@@ -1,0 +1,21 @@
+{
+  "provider_mode": "SPONSOR_SLOTS",
+  "rewarded_coin_amount": 50,
+  "cooldown_seconds": 60,
+  "slots": [
+    {
+      "id": "home_top",
+      "label": "Sponsored",
+      "enabled": true,
+      "title": "Your Sponsor Here",
+      "url": "#"
+    },
+    {
+      "id": "game_bottom",
+      "label": "Sponsored",
+      "enabled": true,
+      "title": "Promotion Slot",
+      "url": "#"
+    }
+  ]
+}

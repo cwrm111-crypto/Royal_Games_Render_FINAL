@@ -1,0 +1,2 @@
+# Security
+Rotate any credentials previously exposed in chat. Never commit `.env`. Replace local admin password. Use HTTPS, origin restrictions, Telegram initData verification, persistent DB backups and server-side provider verification before public launch.
