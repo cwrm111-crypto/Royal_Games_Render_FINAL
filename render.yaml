@@ -1,59 +1,22 @@
-services:
+﻿services:
   - type: web
     name: royal-games-web
     runtime: python
-    plan: starter
+    plan: free
     region: singapore
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn backend.app:application --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     autoDeploy: yes
     numInstances: 1
-    disk:
-      name: royal-games-data
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: DATABASE_PATH
-        value: /var/data/royal_games.sqlite3
+        value: data/royal_games.sqlite3
       - key: START_COINS
         value: "5000"
       - key: TELEGRAM_BOT_TOKEN
         sync: false
-      - key: MINI_APP_URL
-        fromService:
-          name: royal-games-web
-          type: web
-          envVarKey: RENDER_EXTERNAL_URL
-      - key: ROYAL_GAMES_APP_URL
-        fromService:
-          name: royal-games-web
-          type: web
-          envVarKey: RENDER_EXTERNAL_URL
+      - key: TELEGRAM_WEBHOOK_SECRET
+        sync: false
       - key: CORS_ORIGINS
         value: "*"
-
-  - type: worker
-    name: royal-games-bot
-    runtime: python
-    plan: starter
-    region: singapore
-    buildCommand: pip install -r requirements.txt
-    startCommand: python bot/telegram_bot.py
-    autoDeploy: yes
-    envVars:
-      - key: TELEGRAM_BOT_TOKEN
-        fromService:
-          name: royal-games-web
-          type: web
-          envVarKey: TELEGRAM_BOT_TOKEN
-      - key: MINI_APP_URL
-        fromService:
-          name: royal-games-web
-          type: web
-          envVarKey: RENDER_EXTERNAL_URL
-      - key: ROYAL_GAMES_APP_URL
-        fromService:
-          name: royal-games-web
-          type: web
-          envVarKey: RENDER_EXTERNAL_URL
